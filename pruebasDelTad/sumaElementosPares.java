@@ -27,6 +27,7 @@ public class sumaElementosPares {
                     if(i%2==0)
                         pila1.apilar(i);
                 pila1.apilar(3);
+                pila1.apilar(12345);
                 /*pila1.apilar(10);
                 pila1.apilar(21);
                 pila1.apilar(54);
