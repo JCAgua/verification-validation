@@ -15,9 +15,18 @@ public class PuebaCopiarPila {
 		O.apilar (3);
 		O.apilar (11);
 		O.apilar (15);
-	  for (i=0;i<10;i++){
-		 j= O.desapilar();
-		 D.apilar(j);
+	  copiarPila(O, D);
+		O.imprimirPila();
+		D.imprimirPila();
+  }
+  
+  public static void copiarPila(Pila O, Pila D) throws PilaVacia {
+	  int j;
+	  if(!O.pilaVacia()){
+		 j = O.desapilar();
+	     copiarPila(O, D);
+		 O.apilar();
+		 D.apilar();
 	  }
   }
 
