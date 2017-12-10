@@ -15,10 +15,12 @@ public class PuebaCopiarPila {
 		O.apilar (3);
 		O.apilar (11);
 		O.apilar (15);
+		/*
 	  for (i=0;i<10;i++){
 		 j= O.desapilar();
 		 D.apilar(j);
 	  }
+	  */
   }
 
 public static int sumaElementos(Pila D) throws PilaVacia {
