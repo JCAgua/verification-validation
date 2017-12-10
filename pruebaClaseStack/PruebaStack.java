@@ -44,9 +44,9 @@ public class PruebaStack {
   }
 	
 	public static void main(String[] args) {
-		pruebaPilaString ();
-		pruebaPilaInteger ();
+		// pruebaPilaString ();
+		// pruebaPilaInteger ();
 		pruebaPilaRegistroAlumno ();
-		pruebaPilaChar ();
+		// pruebaPilaChar ();
 	}
 }
