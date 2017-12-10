@@ -5,17 +5,16 @@ import tadPila.PilaVacia;
 
 public class sumaElemPares {
 	public  int sumaElemPares (Pila D) throws PilaVacia {
-		int elem,sumapares=0,i=0;
+		int elem, sumapares;
 		if(!D.pilaVacia()){
-			while(i<10){
 			elem=D.desapilar();
-			sumapares = elem + sumaElemPares(D);
+                        if(elem%2==0)
+                            sumapares = elem + sumaElemPares(D);
+                        else sumapares = sumaElemPares(D);
 			D.apilar(elem);
-			i=i+2;
 		}
+                else sumapares = 0;
+                return sumapares;
 	 }
-		return sumapares;
-
-}
 
 }
