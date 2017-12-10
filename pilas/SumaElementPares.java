@@ -5,15 +5,15 @@ import tadPila.PilaVacia;
 
 public class SumaElementPares {
 		public int sumaElementPares (Pila D) throws PilaVacia {
-			int elem, suma=0, i=0;
+			int elem, suma;
 			if(!D.pilaVacia()){
-				while (i>10){
 				elem = D.desapilar();
-				suma = elem + sumaElementPares(D);
+                                if(elem%2==0)
+                                    suma = elem + sumaElementPares(D);
+                                else suma = sumaElementPares(D);
 				D.apilar(elem);
-				i=i+2;
-				}
 			}
+                        else suma = 0;
 			return suma;
 			
 	}
